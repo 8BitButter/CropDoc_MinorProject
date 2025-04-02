@@ -1,0 +1,7 @@
+streamlit
+torch
+torchvision
+transformers>=4.34.0 # Version important for TinyLlama chat template support
+Pillow
+sentencepiece # Often required by transformers tokenizers
+accelerate # Recommended for device_map="auto" and optimizing model loading/execution
