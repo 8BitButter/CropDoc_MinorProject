@@ -73,8 +73,8 @@ class LLMAdvisor:
             inputs = _self.tokenizer(prompt, return_tensors="pt").to(_self.model.device)
             outputs = _self.model.generate(
                 **inputs,
-                max_new_tokens=512,
-                temperature=0.4,
+                max_new_tokens=1024,
+                temperature=0.7,
                 do_sample=True
             )
 
